@@ -2,12 +2,18 @@ import lombok.Data;
 @Data
 public class Anime {
     private String title;
-    private Integer quantity;
+    private Integer episodes;
+
+    public Anime(String title, Integer quantity) {
+        this.title = title;
+        this.episodes = quantity;
+    }
+
     @Override
     public String toString() {
         return "Anime{" +
-                "title='" + title + '\'' +
-                ", quantity=" + quantity +
+                "episodes='" + title + '\'' +
+                ", quantity=" + episodes +
                 '}';
     }
 }
