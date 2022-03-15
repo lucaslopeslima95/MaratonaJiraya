@@ -2,8 +2,7 @@ import lombok.Data;
 @Data
 public class Anime {
     private String title;
-    private int quantity;
-
+    private Integer quantity;
     @Override
     public String toString() {
         return "Anime{" +
