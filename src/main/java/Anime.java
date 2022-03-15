@@ -4,16 +4,16 @@ public class Anime {
     private String title;
     private Integer episodes;
 
-    public Anime(String title, Integer quantity) {
+    public Anime(String title, Integer episodes) {
         this.title = title;
-        this.episodes = quantity;
+        this.episodes = episodes;
     }
 
     @Override
     public String toString() {
         return "Anime{" +
-                "episodes='" + title + '\'' +
-                ", quantity=" + episodes +
+                "title='" + title + '\'' +
+                ", episodes=" + episodes +
                 '}';
     }
 }
